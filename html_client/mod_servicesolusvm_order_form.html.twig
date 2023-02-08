@@ -4,7 +4,7 @@
 <section>
     <div class="well">
         <strong>{{ product.title }}</strong>
-        {{ product.description|bbmd }}
+        {{ product.description|markdown }}
 
         {% if product.pricing.type == 'recurrent' %}
         <select name="period" id="period-selector">
